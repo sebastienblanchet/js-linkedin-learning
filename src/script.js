@@ -1,77 +1,98 @@
-var a = 5;
-var b = 4;
-var sum = a + b;
-var negInteger = -3.14159265359;
-var escQuote = "Quotes can also be \"escaped\".";
-var theSunIsWarm = true;
-var emptyInside = null;
-var justAnotherVariable;
+// Regular function, called explicitly by name:
+function multiply() {
+    var result = 3 * 4;
+    console.log("3 multiplied by 4 is ", result);
+}
+multiply();
 
-// Try this in your console:
-// console.log(typeof insertVariableName);
-var negInteger = -3.14159265359;
-var escQuote = "Quotes can also be \"escaped\".";
-var theSunIsWarm = true;
-var emptyInside = null;
-var justAnotherVariable;
+// Anonymous function stored in variable.
+// Invoked by calling the variable as a function:
+var divided = function() {
+    var result = 3 / 4;
+    console.log("3 divided by 4 is ", result);
+}
+divided();
 
-// Try this in your console:
-// console.log(typeof insertVariableName);
-var a = 5;
-var b = 4;
-var sum = a + b;
-var a = 5;
-var b = 5;
-var theNumbersMatch
-
-if ( a == b ) {
-    theNumbersMatch = true;
-} else {
-    theNumbersMatch = false;
+// Immediately Invoked Function Expression.
+// Runs as soon as the browser finds it:
+(function() {
+    var result = 12 / 0.75;
+    console.log("12 divided by 0.75 is ", result);
+}())
+function findBiggestFraction() {
+    a>b ? console.log("a: ", a) : console.log("b: ", b);
 }
 
-console.log(theNumbersMatch);
-var pens;
-pens = ["red", "blue", "green", "orange"];
+var a = 3/4;
+var b = 5/7;
 
-console.log("Before: ", pens);
+findBiggestFraction();
+function findBiggestFraction(a,b) {
+    a>b ? console.log("a: ", a) : console.log("b: ", b);
+}
 
-// PROPERTIES:
-// Get a property of an object by name:
-// console.log("Array length: ", pens.length);
+var firstFraction = 3/4;
+var secondFraction = 5/7;
 
-// METHODS:
-// Reverse the array:
-// pens.reverse();
+findBiggestFraction(firstFraction,secondFraction);
+function findBiggestFraction(a,b) {
+    var result;
+    a>b ? result = ["firstFraction", a] : result = ["secondFraction", b];
+    return result;
+}
 
-// Remove the first value of the array:
-// pens.shift();
+var firstFraction = 3/4;
+var secondFraction = 5/7;
 
-// Add comma-separated list of values to the front of the array:
-// pens.unshift("purple", "black");
+var fractionResult = findBiggestFraction(firstFraction,secondFraction);
 
-// Remove the last value of the array:
-// pens.pop();
+console.log("First fraction result: ", firstFraction);
+console.log("Second fraction result: ", secondFraction);
+console.log("Fraction " + fractionResult[0] + " with a value of " + fractionResult[1] + " is the biggest!");
+var theBiggest = function(a,b) {
+    var result;
+    a>b ? result = ["a", a] : result = ["b", b];
+    return result;
+}
 
-// Add comma-separated list of values to the end of the array:
-// pens.push("pink", "prussian blue");
+console.log(theBiggest(7/9,13/25));
+function findBiggestFraction(a,b) {
+    console.log("Fraction a: ", firstFraction);
+    console.log("Fraction b: ", secondFraction);
 
-// Find the specified position (pos) and remove n number of items from the array. Arguments: pens.splice(pos,n):
-// pens.splice(pos, n) // Starts at the seccond item and removes two items.
+    var result;
 
-// console.log("After: ", pens);
+	a>b ? result = ["a",a] : result = ["b",b];
+    return result;
+}
 
-// Create a copy of an array. Typically assigned to a new variable:
-// var newPens = pens.slice();
-// console.log("New pens: ", newPens);
+var firstFraction = 7/16;
+var secondFraction = 13/25;
 
-// Return the first element that matches the search parameter after the specified index position. Defaults to index position 0. Arguments: pens.indexOf(search, index):
-// var result = pens.indexOf(search, index);
-// console.log("The search result index is: ", result);
+var fractionResult = findBiggestFraction(firstFraction,secondFraction);
+console.log("Fraction " + fractionResult[0] + " with a value of " + fractionResult[1] + " is the biggest.");
+var course = new Object();
 
-// Return the items in an array as a comma separated string. The separator argument can be used to change the comma to something else. Arguments: pens.join(separator):
-// var arrayString = pens.join(separator);
-// console.log("String from array: ", arrayString);
+var course = {
+    title: "JavaScript Essential Training",
+    instructor: "Morten Rand-Hendriksen",
+    level: 1,
+    published: true,
+    views: 0,
+    updateViews: function() {
+        return ++course.views;
+    }
+}
 
-// MDN documentation for Array:
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+console.log(course);
+function doSomeMath() {
+	var a = 5;
+	var b = 4;
+	var sum = a + b;
+
+	return sum;
+}
+
+var theResult = doSomeMath();
+
+console.log("The result: ", theResult);
