@@ -6,8 +6,7 @@ Tracking developments of previously complete JavaScript course.
 
 ## Tags
 
-<!-- * [v12.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v12.0): Chapter 12: Bonus
-* [v11.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v11.0): Chapter 11: QA -->
+* [v11.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v11.0): Chapter 11: QA
 * [v10.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v10.0): Chapter 10: Automated image markup
 * [v9.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v9.0): Chapter 9: Loops
 * [v8.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v8.0): Chapter 8: Typing speed example
