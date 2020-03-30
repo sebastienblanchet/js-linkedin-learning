@@ -8,8 +8,8 @@ Tracking developments of previously complete JavaScript course.
 
 <!-- * [v12.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v12.0): Chapter 12: Bonus
 * [v11.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v11.0): Chapter 11: QA
-* [v10.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v10.0): Chapter 10: Automated image markup
-* [v9.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v9.0): Chapter 9: Loops -->
+* [v10.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v10.0): Chapter 10: Automated image markup -->
+* [v9.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v9.0): Chapter 9: Loops
 * [v8.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v8.0): Chapter 8: Typing speed example
 * [v7.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v7.0): Chapter 7: DOM events
 * [v6.0](https://github.com/sebastienblanchet/js-linkedin-learning/releases/tag/v6.0): Chapter 6: analog clock example
